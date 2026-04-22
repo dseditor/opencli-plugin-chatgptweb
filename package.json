@@ -1,0 +1,9 @@
+{
+  "name": "opencli-plugin-chatgptweb",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenCLI plugin for ChatGPT web — image generation and editing via browser automation",
+  "peerDependencies": {
+    "@jackwener/opencli": ">=1.7.4"
+  }
+}

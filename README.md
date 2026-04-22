@@ -1,8 +1,9 @@
-# opencli chatgpt adapter — image & edit
+# opencli-plugin-chatgptweb
 
-Custom adapters for `opencli chatgpt image` and `opencli chatgpt edit`.
+OpenCLI plugin for **ChatGPT web** (browser-based) — image generation and editing.
 
-Fixes the broken `edit` command and improves the `image` command navigation.
+This is the web version plugin (`chatgptweb`), distinct from the official Mac app adapter.
+Commands: `opencli chatgptweb image` and `opencli chatgptweb edit`.
 
 ## What's included
 
@@ -20,26 +21,18 @@ Fixes the broken `edit` command and improves the `image` command navigation.
 
 ## Installation
 
-Copy the three files to your opencli user adapter directory:
-
 ```bash
-# macOS / Linux
-mkdir -p ~/.opencli/clis/chatgpt
-cp edit.js image.js utils.js ~/.opencli/clis/chatgpt/
-
-# Windows (PowerShell)
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.opencli\clis\chatgpt"
-Copy-Item edit.js, image.js, utils.js "$env:USERPROFILE\.opencli\clis\chatgpt\"
+opencli plugin install github:dseditor/opencli-plugin-chatgptweb
 ```
 
 ## Usage
 
 ```bash
 # Generate an image
-opencli chatgpt image "a cat sitting on the moon"
+opencli chatgptweb image "a cat sitting on the moon"
 
 # Edit a reference image
-opencli chatgpt edit ./my-photo.jpg "add a flower crown on her head"
+opencli chatgptweb edit ./my-photo.jpg "add a flower crown on her head"
 ```
 
 ## Key fixes in this version

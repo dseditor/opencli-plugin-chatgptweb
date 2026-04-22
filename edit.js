@@ -201,7 +201,7 @@ async function waitForGeneratedImage(page, timeoutSeconds, conversationUrl) {
 
 
 export const editCommand = cli({
-  site: 'chatgpt',
+  site: 'chatgptweb',
   name: 'edit',
   description: 'Upload a reference image to ChatGPT, generate an edited image, and save it locally',
   domain: CHATGPT_DOMAIN,
