@@ -50,7 +50,7 @@ export const imageCommand = cli({
         const outputDir = kwargs.op || path.join(os.homedir(), 'Pictures', 'chatgpt');
         const skipDownloadRaw = kwargs.sd;
         const skipDownload = skipDownloadRaw === '' || skipDownloadRaw === true || normalizeBooleanFlag(skipDownloadRaw);
-        const timeout = 120;
+        const timeout = 180;
 
         // Navigate to homepage (not /new) — /new causes a hard CDP target change on first send
         await page.goto(`https://${CHATGPT_DOMAIN}`, { settleMs: 2000 });
